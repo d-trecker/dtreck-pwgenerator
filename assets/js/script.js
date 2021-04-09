@@ -1,3 +1,5 @@
+// Assignment code here
+
 //Alert when landing on the page.
 alert(
   "Welcome to Password Generator! Click on 'Generate Password' and follow the prompts to create your passowrd!"
@@ -60,6 +62,22 @@ function writePassword() {
   }
   console.log(specialInput);
 
+  //Generate Password Function
+  var generatePassword = function () {
+    var fullPw = lowerInput + upperInput + numberInput + specialInput;
+    console.log(fullPw);
+    mixedPW = "";
+    for (let i = 0; i <= lengthInput; i++) {
+      mixedPW =
+        mixedPW +
+        fullPw.charAt(
+          Math.floor(Math.random() * Math.floor(fullPw.length - 1))
+        );
+      console.log(mixedPW);
+    }
+    return mixedPW;
+  };
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -68,3 +86,9 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+/*Character Types
+var lowerTypes = "abcdefghijklmnopqrstuvwxyz";
+var upperTypes = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numberTypes = "1234567890";
+var specialTypes = "!@#$%^&*()-_=+"; */

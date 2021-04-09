@@ -1,4 +1,4 @@
-# Password Generator Starter Code
+# Challenge 3 Password Generator
 
 Title: Javascript Challenge 3: Password Generator </br>
 Student: Dylan Trecker</br>
@@ -7,12 +7,12 @@ Site Link: https://d-trecker.github.io/dtreck-pwgenerator/ </br>
 Full Repository: https://github.com/d-trecker/dtreck-pwgenerator.git </br>
 Get the repository by: $ git clone git@github.com:d-trecker/dtreck-pwgenerator.git </br>
 
-User Story
+User Story </br>
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
 
-Acceptance Criteria
+Acceptance Criteria </br>
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria

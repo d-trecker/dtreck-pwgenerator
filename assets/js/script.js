@@ -16,7 +16,7 @@ function writePassword() {
     "How long do you want your password to be? Choose between 8-128 characters."
   );
   debugger;
-  if (lengthInput >= 8 || lengthInput === 128) {
+  if (lengthInput >= 8 && lengthInput <= 128) {
     lengthInput === lengthInput;
   } else {
     window.alert(

@@ -16,7 +16,14 @@ function writePassword() {
     "How long do you want your password to be? Choose between 8-128 characters."
   );
   debugger;
-  if ((lengthInput) => 8 || lengthInput === 127) lengthInput === lengthInput;
+  if (lengthInput >= 8 || lengthInput === 128) {
+    lengthInput === lengthInput;
+  } else {
+    window.alert(
+      "That is not a valid password length. Please choose a length from 8 to 128 characters"
+    );
+    return writePassword();
+  }
 
   //Lowercase prompt
   var lowerInput = window.prompt(
@@ -67,7 +74,7 @@ function writePassword() {
     var fullPw = lowerInput + upperInput + numberInput + specialInput;
     console.log(fullPw);
     mixedPW = "";
-    for (let i = 0; i <= lengthInput; i++) {
+    for (let i = 1; i <= lengthInput; i++) {
       mixedPW =
         mixedPW +
         fullPw.charAt(

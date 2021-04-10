@@ -82,7 +82,14 @@ function writePassword() {
         );
       console.log(mixedPW);
     }
-    return mixedPW;
+    if (fullPw === "") {
+      window.alert(
+        "You must pick at least 1 type of character set to use. Please try again."
+      );
+      return "";
+    } else {
+      return mixedPW;
+    }
   };
 
   var password = generatePassword();
